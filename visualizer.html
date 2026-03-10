@@ -28,11 +28,12 @@
     const ptIframe = document.getElementById('pt-iframe');
 
     if (code) {
-      ptIframe.src = `https://pythontutor.com/member.html#mode=edit${Parser.encodeCode(code)}&lang=c&mode=display`;
+      ptIframe.src = `https://pythontutor.com/visualize.html#code=${Parser.encodeCode(code)}&lang=c&mode=display`;
     } else {
       ptIframe.src = 'about:blank';
     }
   </script>
 </body>
 </html>
+
 
